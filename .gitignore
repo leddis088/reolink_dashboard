@@ -137,3 +137,107 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+.idea/
+
+############################
+# Node / backend artifacts #
+############################
+
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+
+dist/
+build/
+coverage/
+.nyc_output/
+
+# Local environment & secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+backend/config/config.local.*
+backend/config/local.*
+secrets/
+secret/
+*.secret.*
+*.secrets.*
+
+# TLS / certificates / keys
+certs/
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+
+############################
+# Frontend build artifacts #
+############################
+
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.cache/
+frontend/.vite/
+frontend/.next/
+frontend/.nuxt/
+
+#########################
+# Media / stream output #
+#########################
+
+streams/
+*.m3u8
+*.ts
+media/
+recordings/
+snapshots/
+tmp/
+temp/
+
+#####################
+# Nginx / local cfg #
+#####################
+
+nginx/*.conf
+!nginx/*.example.conf
+nginx/*.local.conf
+
+####################
+# OS / editor noise #
+####################
+
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.iml
+
+##################
+# Miscellaneous  #
+##################
+
+.logs/
+logs/
+*.log
+*.pid
+*.seed
+*.bak
+*.orig
+
+# Test artifacts
+junit.xml
+reports/
