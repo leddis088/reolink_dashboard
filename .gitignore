@@ -156,18 +156,18 @@ build/
 coverage/
 .nyc_output/
 
-# Local environment & secrets
+# Env / secrets
 .env
 .env.*
 !.env.example
-!.env.*.example
 
-backend/config/config.local.*
-backend/config/local.*
-secrets/
-secret/
-*.secret.*
-*.secrets.*
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+backend/config/config.local.json
+backend/config/*.local.json
+backend/config/secret*.json
 
 # TLS / certificates / keys
 certs/
@@ -211,7 +211,7 @@ nginx/*.conf
 nginx/*.local.conf
 
 ####################
-# OS / editor noise #
+# OS / editor junk #
 ####################
 
 .DS_Store
