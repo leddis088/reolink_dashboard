@@ -1,0 +1,14 @@
+{
+  "server": {
+    "port": 4000,
+    "allowedOrigin": "http://localhost:8080"
+  },
+  "reolink": {
+    "cameras": [
+      { "id": "cam01", "name": "Front Door", "location": "Entrance" },
+      { "id": "cam02", "name": "Driveway", "location": "North Side" },
+      { "id": "cam03", "name": "Backyard", "location": "Garden" },
+      { "id": "cam04", "name": "Garage", "location": "Garage" }
+    ]
+  }
+}
